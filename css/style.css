@@ -40,10 +40,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-}
-
-.nav-links li {
-    margin-left: 2rem;
+    gap: 40px;
 }
 
 .nav-links a {
@@ -68,6 +65,71 @@ header {
     height: 3px;
     margin: 5px auto;
     background: #FFF;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #000000 0%, #111111 50%, #1E1E1E 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.social-icons i {
+  font-size: 30px; 
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.photo-profile {
+    width: 210px;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.hero h1 span {
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--primary-color);
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 786px) {
